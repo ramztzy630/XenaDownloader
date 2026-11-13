@@ -8,7 +8,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "dev": "vercel dev",
+    "dev": "npx vercel dev",
     "check": "node --check api/_extractor.js && node --check api/_utils.js && node --check api/health.js && node --check api/info.js && node --check api/download.js && node --check public/js/app.js"
   },
   "dependencies": {
