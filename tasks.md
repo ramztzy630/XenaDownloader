@@ -30,7 +30,7 @@
   - Switch tab Format (`Video`, `Audio`, `Foto`) & penyesuaian opsi kualitas.
   - Tombol **"Pakai contoh tautan"** & tombol Paste clipboard.
   - Fetch relatif ke `/api/info` dan `/api/download` (otomatis jalan baik di localhost maupun domain `.vercel.app`).
-  - Render Result Card dengan thumbnail, judul, dan tombol unduh langsung. *(Commit: `-`)*
+  - Render Result Card dengan thumbnail, judul, dan tombol unduh langsung. *(Commit: `1bfb6f6`)*
 - [x] **3.5** Push branch `feat/frontend-ui` dan buat Pull Request ke `main` via `gh pr create`, lalu merge ke `main`. *(Commit: `08c97ac`)* — PR #2: https://github.com/ramztzy630/XenaDownloader/pull/2
 
 ---
