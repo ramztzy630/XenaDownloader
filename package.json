@@ -1,0 +1,10 @@
+{
+  "name": "xenadownloader",
+  "version": "1.0.0",
+  "description": "All-in-one social media downloader web app deployed on Vercel",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {}
+}
