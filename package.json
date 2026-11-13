@@ -3,8 +3,25 @@
   "version": "1.0.0",
   "description": "All-in-one social media downloader web app deployed on Vercel",
   "type": "module",
-  "scripts": {
-    "dev": "vercel dev"
+  "private": true,
+  "engines": {
+    "node": "22.x"
   },
-  "dependencies": {}
+  "scripts": {
+    "dev": "vercel dev",
+    "check": "node --check api/_extractor.js && node --check api/_utils.js && node --check api/health.js && node --check api/info.js && node --check api/download.js && node --check public/js/app.js"
+  },
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.12"
+  },
+  "keywords": [
+    "downloader",
+    "youtube",
+    "tiktok",
+    "instagram",
+    "twitter",
+    "vercel",
+    "serverless"
+  ],
+  "license": "MIT"
 }
