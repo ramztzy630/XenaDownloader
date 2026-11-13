@@ -62,3 +62,4 @@
 | 4.1 Validasi Vercel | `chore/release-v1.0.0` | `0cccc7b` | `fix: correct vercel static routing and function limits` | Merged (#3) |
 | 4.2 Dokumentasi rilis | `chore/release-v1.0.0` | `8f0889c` | `docs: add deployment guide and v1.0.0 release notes` | Merged (#3) |
 | Rilis v1.0.0 | `main` | `744f6ce` | `chore: prepare v1.0.0 Vercel release` | Merged (#3) |
+| Pasca-rilis: direct scraper | `main` | `22c6ede` | `refactor: replace third-party extractors with direct scraping` | - |
