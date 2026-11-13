@@ -16,7 +16,7 @@
 - [x] **2.2** Perbarui `package.json` di root proyek dengan dependensi Node.js murni yang kompatibel dengan Vercel Serverless Functions (tanpa binary sistem berat). *(Commit: `38d6fa4`)*
 - [x] **2.3** Buat endpoint `api/health.js` untuk pengecekan status API Vercel (`200 OK`, timestamp, runtime info). *(Commit: `23e9920`)*
 - [x] **2.4** Buat helper extractor di `api/_extractor.js` (diawali underscore `_` agar tidak dianggap route publik oleh Vercel) untuk mendeteksi platform (YouTube, TikTok, Instagram, X, Facebook) dan mengambil metadata serta direct download links. *(Commit: `014b5a1`)*
-- [ ] **2.5** Buat endpoint `api/info.js` (`POST /api/info`) untuk mengembalikan thumbnail, judul, dan opsi kualitas yang tersedia dari URL yang dikirim frontend. *(Commit: `-`)*
+- [x] **2.5** Buat endpoint `api/info.js` (`POST /api/info`) untuk mengembalikan thumbnail, judul, dan opsi kualitas yang tersedia dari URL yang dikirim frontend. *(Commit: `bcad943`)*
 - [ ] **2.6** Buat endpoint `api/download.js` (`POST /api/download`) untuk mengembalikan direct download URL / stream sesuai format (`video`, `audio`, `photo`) dan kualitas (`1080p`, `720p`, `480p`), lengkap dengan header CORS dan error handling. *(Commit: `-`)*
 - [ ] **2.7** Push branch `feat/serverless-api` dan buat Pull Request ke `main` via `gh pr create`, lalu merge ke `main`. *(Commit: `-`)*
 
