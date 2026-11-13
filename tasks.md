@@ -12,8 +12,8 @@
 ---
 
 ## Fase 2: Pengerjaan Backend Serverless (`api/`)
-- [ ] **2.1** Buat branch fitur `git checkout -b feat/serverless-api`. *(Commit: `-`)*
-- [ ] **2.2** Perbarui `package.json` di root proyek dengan dependensi Node.js murni yang kompatibel dengan Vercel Serverless Functions (tanpa binary sistem berat). *(Commit: `-`)*
+- [x] **2.1** Buat branch fitur `git checkout -b feat/serverless-api`. *(Commit: `-`)*
+- [x] **2.2** Perbarui `package.json` di root proyek dengan dependensi Node.js murni yang kompatibel dengan Vercel Serverless Functions (tanpa binary sistem berat). *(Commit: `38d6fa4`)*
 - [ ] **2.3** Buat endpoint `api/health.js` untuk pengecekan status API Vercel (`200 OK`, timestamp, runtime info). *(Commit: `-`)*
 - [ ] **2.4** Buat helper extractor di `api/_extractor.js` (diawali underscore `_` agar tidak dianggap route publik oleh Vercel) untuk mendeteksi platform (YouTube, TikTok, Instagram, X, Facebook) dan mengambil metadata serta direct download links. *(Commit: `-`)*
 - [ ] **2.5** Buat endpoint `api/info.js` (`POST /api/info`) untuk mengembalikan thumbnail, judul, dan opsi kualitas yang tersedia dari URL yang dikirim frontend. *(Commit: `-`)*
