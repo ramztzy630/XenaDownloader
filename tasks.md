@@ -23,8 +23,8 @@
 ---
 
 ## Fase 3: Pengerjaan Frontend (`public/`)
-- [ ] **3.1** Buat branch fitur `git checkout -b feat/frontend-ui` dari `main` terbaru. *(Commit: `-`)*
-- [ ] **3.2** Bangun struktur semantik `public/index.html` sesuai spesifikasi di `prd.md` dan referensi visual `public/assets/referensi.jpg` (Navbar XenaDownloader, Hero Title, Form Input URL, Tombol Format Video/Audio/Foto, Tombol Kualitas 1080p/720p/480p, Tombol Ambil Berkas, Badge Platform, Panduan Cara Pakai). *(Commit: `-`)*
+- [x] **3.1** Buat branch fitur `git checkout -b feat/frontend-ui` dari `main` terbaru. *(Commit: `-`)*
+- [x] **3.2** Bangun struktur semantik `public/index.html` sesuai spesifikasi di `prd.md` dan referensi visual `public/assets/referensi.jpg` (Navbar XenaDownloader, Hero Title, Form Input URL, Tombol Format Video/Audio/Foto, Tombol Kualitas 1080p/720p/480p, Tombol Ambil Berkas, Badge Platform, Panduan Cara Pakai). *(Commit: `-`)*
 - [ ] **3.3** Styling lengkap di `public/css/style.css` (tampilan bersih mobile-first, kartu membulat, active state tombol format & kualitas, animasi loading, kontras tinggi). *(Commit: `-`)*
 - [ ] **3.4** Implementasi logika interaktif di `public/js/app.js`:
   - Switch tab Format (`Video`, `Audio`, `Foto`) & penyesuaian opsi kualitas.
