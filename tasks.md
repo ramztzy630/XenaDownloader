@@ -17,7 +17,7 @@
 - [x] **2.3** Buat endpoint `api/health.js` untuk pengecekan status API Vercel (`200 OK`, timestamp, runtime info). *(Commit: `23e9920`)*
 - [x] **2.4** Buat helper extractor di `api/_extractor.js` (diawali underscore `_` agar tidak dianggap route publik oleh Vercel) untuk mendeteksi platform (YouTube, TikTok, Instagram, X, Facebook) dan mengambil metadata serta direct download links. *(Commit: `014b5a1`)*
 - [x] **2.5** Buat endpoint `api/info.js` (`POST /api/info`) untuk mengembalikan thumbnail, judul, dan opsi kualitas yang tersedia dari URL yang dikirim frontend. *(Commit: `bcad943`)*
-- [ ] **2.6** Buat endpoint `api/download.js` (`POST /api/download`) untuk mengembalikan direct download URL / stream sesuai format (`video`, `audio`, `photo`) dan kualitas (`1080p`, `720p`, `480p`), lengkap dengan header CORS dan error handling. *(Commit: `-`)*
+- [x] **2.6** Buat endpoint `api/download.js` (`POST /api/download`) untuk mengembalikan direct download URL / stream sesuai format (`video`, `audio`, `photo`) dan kualitas (`1080p`, `720p`, `480p`), lengkap dengan header CORS dan error handling. *(Commit: `dab6311`)*
 - [ ] **2.7** Push branch `feat/serverless-api` dan buat Pull Request ke `main` via `gh pr create`, lalu merge ke `main`. *(Commit: `-`)*
 
 ---
@@ -47,3 +47,10 @@
 | 1.1 Verifikasi tooling | `main` | `-` | verifikasi `git` & `gh auth status` | - |
 | 1.2 Inisialisasi repo | `main` | `f7bd95d` | `chore: initial vercel project structure, prd, and tasks` | - |
 | 1.3 Repo GitHub dibuat | `main` | `-` | `gh repo create XenaDownloader --public --push` | - |
+| 2.1 Branch backend | `feat/serverless-api` | `-` | `git checkout -b feat/serverless-api` | - |
+| 2.2 Dependensi serverless | `feat/serverless-api` | `38d6fa4` | `chore: configure serverless dependencies and project scripts` | - |
+| 2.3 Health endpoint | `feat/serverless-api` | `23e9920` | `feat: add health endpoint and shared serverless utilities` | - |
+| 2.4 Extractor multi-platform | `feat/serverless-api` | `014b5a1` | `feat: implement multi-platform media extractor helper` | - |
+| 2.5 Info endpoint | `feat/serverless-api` | `bcad943` | `feat: add media info serverless endpoint` | - |
+| 2.6 Download endpoint | `feat/serverless-api` | `dab6311` | `feat: add direct download resolver endpoint` | - |
+| 2.7 Pull Request backend | `feat/serverless-api` | `-` | `feat: serverless media API for Vercel` | *dibuat setelah push* |
