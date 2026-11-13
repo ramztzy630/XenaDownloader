@@ -36,7 +36,7 @@
 ---
 
 ## Fase 4: Validasi Vercel & Dokumentasi Rilis
-- [ ] **4.1** Validasi konfigurasi `vercel.json`, struktur `api/` dan `public/`, serta uji syntax seluruh file JS (`node --check`). *(Commit: `-`)*
+- [x] **4.1** Validasi konfigurasi `vercel.json`, struktur `api/` dan `public/`, serta uji syntax seluruh file JS (`node --check`). *(Commit: `-`)*
 - [ ] **4.2** Perbarui `README.md` dengan panduan deploy 1-klik ke Vercel dari GitHub dan ringkasan commit hash rilis v1.0.0. *(Commit: `-`)*
 
 ---
