@@ -31,7 +31,7 @@
   - Tombol **"Pakai contoh tautan"** & tombol Paste clipboard.
   - Fetch relatif ke `/api/info` dan `/api/download` (otomatis jalan baik di localhost maupun domain `.vercel.app`).
   - Render Result Card dengan thumbnail, judul, dan tombol unduh langsung. *(Commit: `-`)*
-- [ ] **3.5** Push branch `feat/frontend-ui` dan buat Pull Request ke `main` via `gh pr create`, lalu merge ke `main`. *(Commit: `-`)*
+- [x] **3.5** Push branch `feat/frontend-ui` dan buat Pull Request ke `main` via `gh pr create`, lalu merge ke `main`. *(Commit: `08c97ac`)* — PR #2: https://github.com/ramztzy630/XenaDownloader/pull/2
 
 ---
 
@@ -58,4 +58,4 @@
 | 3.2 Markup antarmuka | `feat/frontend-ui` | `1541969` | `feat: build accessible downloader UI markup` | - |
 | 3.3 Styling antarmuka | `feat/frontend-ui` | `fd251a2` | `feat: style responsive lavender and cream interface` | - |
 | 3.4 Logika interaktif | `feat/frontend-ui` | `1bfb6f6` | `feat: wire interactive format, quality, paste, and download flow` | - |
-| 3.5 Pull Request frontend | `feat/frontend-ui` | `-` | `feat: responsive downloader frontend` | *dibuat setelah push* |
+| 3.5 Pull Request frontend | `feat/frontend-ui` | `08c97ac` | `feat: responsive downloader frontend` | Merged (#2) |
