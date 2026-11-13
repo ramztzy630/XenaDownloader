@@ -18,7 +18,7 @@
 - [x] **2.4** Buat helper extractor di `api/_extractor.js` (diawali underscore `_` agar tidak dianggap route publik oleh Vercel) untuk mendeteksi platform (YouTube, TikTok, Instagram, X, Facebook) dan mengambil metadata serta direct download links. *(Commit: `014b5a1`)*
 - [x] **2.5** Buat endpoint `api/info.js` (`POST /api/info`) untuk mengembalikan thumbnail, judul, dan opsi kualitas yang tersedia dari URL yang dikirim frontend. *(Commit: `bcad943`)*
 - [x] **2.6** Buat endpoint `api/download.js` (`POST /api/download`) untuk mengembalikan direct download URL / stream sesuai format (`video`, `audio`, `photo`) dan kualitas (`1080p`, `720p`, `480p`), lengkap dengan header CORS dan error handling. *(Commit: `dab6311`)*
-- [ ] **2.7** Push branch `feat/serverless-api` dan buat Pull Request ke `main` via `gh pr create`, lalu merge ke `main`. *(Commit: `-`)*
+- [x] **2.7** Push branch `feat/serverless-api` dan buat Pull Request ke `main` via `gh pr create`, lalu merge ke `main`. *(Commit: `faac3c7`)* — PR #1: https://github.com/ramztzy630/XenaDownloader/pull/1
 
 ---
 
@@ -53,4 +53,4 @@
 | 2.4 Extractor multi-platform | `feat/serverless-api` | `014b5a1` | `feat: implement multi-platform media extractor helper` | - |
 | 2.5 Info endpoint | `feat/serverless-api` | `bcad943` | `feat: add media info serverless endpoint` | - |
 | 2.6 Download endpoint | `feat/serverless-api` | `dab6311` | `feat: add direct download resolver endpoint` | - |
-| 2.7 Pull Request backend | `feat/serverless-api` | `-` | `feat: serverless media API for Vercel` | *dibuat setelah push* |
+| 2.7 Pull Request backend | `feat/serverless-api` | `faac3c7` | `feat: serverless media API for Vercel` | Merged (#1) |
