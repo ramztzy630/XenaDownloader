@@ -23,10 +23,10 @@
 ---
 
 ## Fase 3: Pengerjaan Frontend (`public/`)
-- [ ] **3.1** Buat branch fitur `git checkout -b feat/frontend-ui` dari `main` terbaru. *(Commit: `-`)*
-- [ ] **3.2** Bangun struktur semantik `public/index.html` sesuai spesifikasi di `prd.md` dan referensi visual `public/assets/referensi.jpg` (Navbar XenaDownloader, Hero Title, Form Input URL, Tombol Format Video/Audio/Foto, Tombol Kualitas 1080p/720p/480p, Tombol Ambil Berkas, Badge Platform, Panduan Cara Pakai). *(Commit: `-`)*
-- [ ] **3.3** Styling lengkap di `public/css/style.css` (tampilan bersih mobile-first, kartu membulat, active state tombol format & kualitas, animasi loading, kontras tinggi). *(Commit: `-`)*
-- [ ] **3.4** Implementasi logika interaktif di `public/js/app.js`:
+- [x] **3.1** Buat branch fitur `git checkout -b feat/frontend-ui` dari `main` terbaru. *(Commit: `-`)*
+- [x] **3.2** Bangun struktur semantik `public/index.html` sesuai spesifikasi di `prd.md` dan referensi visual `public/assets/referensi.jpg` (Navbar XenaDownloader, Hero Title, Form Input URL, Tombol Format Video/Audio/Foto, Tombol Kualitas 1080p/720p/480p, Tombol Ambil Berkas, Badge Platform, Panduan Cara Pakai). *(Commit: `1541969`)*
+- [x] **3.3** Styling lengkap di `public/css/style.css` (tampilan bersih mobile-first, kartu membulat, active state tombol format & kualitas, animasi loading, kontras tinggi). *(Commit: `fd251a2`)*
+- [x] **3.4** Implementasi logika interaktif di `public/js/app.js`:
   - Switch tab Format (`Video`, `Audio`, `Foto`) & penyesuaian opsi kualitas.
   - Tombol **"Pakai contoh tautan"** & tombol Paste clipboard.
   - Fetch relatif ke `/api/info` dan `/api/download` (otomatis jalan baik di localhost maupun domain `.vercel.app`).
@@ -54,3 +54,8 @@
 | 2.5 Info endpoint | `feat/serverless-api` | `bcad943` | `feat: add media info serverless endpoint` | - |
 | 2.6 Download endpoint | `feat/serverless-api` | `dab6311` | `feat: add direct download resolver endpoint` | - |
 | 2.7 Pull Request backend | `feat/serverless-api` | `faac3c7` | `feat: serverless media API for Vercel` | Merged (#1) |
+| 3.1 Branch frontend | `feat/frontend-ui` | `-` | `git checkout -b feat/frontend-ui` | - |
+| 3.2 Markup antarmuka | `feat/frontend-ui` | `1541969` | `feat: build accessible downloader UI markup` | - |
+| 3.3 Styling antarmuka | `feat/frontend-ui` | `fd251a2` | `feat: style responsive lavender and cream interface` | - |
+| 3.4 Logika interaktif | `feat/frontend-ui` | `1bfb6f6` | `feat: wire interactive format, quality, paste, and download flow` | - |
+| 3.5 Pull Request frontend | `feat/frontend-ui` | `-` | `feat: responsive downloader frontend` | *dibuat setelah push* |
