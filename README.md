@@ -23,11 +23,11 @@ Aplikasi web downloader media sosial all-in-one untuk mengunduh **Video**, **Aud
 
 | Platform | Video | Audio | Foto | Catatan |
 | :--- | :--- | :--- | :--- | :--- |
-| YouTube | Ya | Ya* | - | `@distube/ytdl-core` + fallback Piped API |
-| TikTok | Ya | Ya | Ya | Video tanpa watermark, audio original, slide foto |
-| Instagram | Ya | - | Ya | Post, Reels, dan carousel publik |
-| X (Twitter) | Ya | - | Ya | Video, GIF (MP4), dan foto |
-| Facebook | Ya | - | - | Video dan Reels publik |
+| YouTube | Ya | Ya* | - | InnerTube `ANDROID_VR`/`IOS` → MP4 & M4A |
+| TikTok | Ya | Ya | Ya | HTML/JSON halaman + embed, audio original, slide foto |
+| Instagram | Ya | - | Ya | HTML/JSON halaman + embed publik |
+| X (Twitter) | Ya | - | Ya | JSON syndication + HTML, video, GIF, dan foto |
+| Facebook | Ya | - | - | Plugin video + HTML publik |
 
 \* Ketersediaan audio YouTube bergantung pada respons upstream. Jika stream audio tidak tersedia, API mengembalikan daftar format audio kosong dan frontend menonaktifkan tab Audio.
 
@@ -87,7 +87,7 @@ Contoh respons ringkas:
   "duration": 24,
   "formats": {
     "video": [{ "quality": "1080p", "label": "HD tanpa watermark", "ext": "mp4" }],
-    "audio": [{ "quality": "128kbps", "label": "Audio original", "ext": "mp3" }],
+    "audio": [{ "quality": "128kbps", "label": "Audio original", "ext": "m4a" }],
     "photo": []
   },
   "available": { "video": true, "audio": true, "photo": false }
@@ -129,11 +129,7 @@ Semua endpoint mengirim header CORS, mendukung `OPTIONS`, dan mengembalikan erro
    - Output Directory: biarkan default (isi `public/` disajikan otomatis)
 4. Klik **Deploy**.
 
-Tidak ada environment variable wajib. Opsional:
-
-| Variabel | Default | Fungsi |
-| :--- | :--- | :--- |
-| `PIPED_API_INSTANCES` | `pipedapi.ducks.party,pipedapi.reallyaweso.me,pipedapi.adminforge.de` | Daftar instance Piped untuk fallback YouTube, dipisahkan koma. |
+Tidak ada environment variable wajib dan tidak ada API key pihak ketiga.
 
 ## Pengembangan Lokal
 
@@ -157,8 +153,11 @@ Perintah tersebut menjalankan `node --check` untuk seluruh file API dan `public/
 ## Catatan Teknis
 
 - Vercel berjalan pada lingkungan serverless read-only. Tidak ada file yang ditulis ke disk dan tidak ada binary sistem yang dijalankan.
-- Ekstraksi memakai kombinasi library Node.js murni dan API ekstraktor pihak ketiga. Ketersediaan tautan dapat berubah kapan saja mengikuti perubahan kebijakan platform sumber.
+- Ekstraksi dilakukan langsung di Node.js: InnerTube YouTube, HTML/JSON TikTok, halaman/embed Instagram, syndication X, dan plugin video Facebook. Tidak ada API ekstraktor pihak ketiga.
 - Direct URL media biasanya memiliki masa berlaku terbatas. Frontend menampilkan tombol unduh langsung dan opsi salin tautan.
+- URL YouTube dari InnerTube dapat terikat IP pemanggil. Pada deployment serverless, unduhan dari perangkat pengguna dapat ditolak YouTube jika IP berbeda; gunakan proxy stream sendiri bila membutuhkan unduhan lintas IP.
+- TikTok dapat menerapkan WAF/Akamai pada halaman atau CDN video. Metadata diambil dari HTML/JSON; audio original biasanya tersedia, sedangkan URL video tertentu dapat memerlukan sesi browser TikTok.
+- Instagram dapat menampilkan login wall untuk IP datacenter. Ekstraksi memakai halaman/embed/JSON publik dan dapat gagal pada postingan atau jaringan tertentu.
 - Gunakan aplikasi ini hanya untuk mengunduh konten yang kamu miliki haknya dan hormati ketentuan layanan setiap platform.
 
 ## Rilis v1.0.0
