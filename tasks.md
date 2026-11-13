@@ -36,8 +36,8 @@
 ---
 
 ## Fase 4: Validasi Vercel & Dokumentasi Rilis
-- [x] **4.1** Validasi konfigurasi `vercel.json`, struktur `api/` dan `public/`, serta uji syntax seluruh file JS (`node --check`). *(Commit: `-`)*
-- [ ] **4.2** Perbarui `README.md` dengan panduan deploy 1-klik ke Vercel dari GitHub dan ringkasan commit hash rilis v1.0.0. *(Commit: `-`)*
+- [x] **4.1** Validasi konfigurasi `vercel.json`, struktur `api/` dan `public/`, serta uji syntax seluruh file JS (`node --check`). *(Commit: `0cccc7b`)*
+- [x] **4.2** Perbarui `README.md` dengan panduan deploy 1-klik ke Vercel dari GitHub dan ringkasan commit hash rilis v1.0.0. *(Commit: `-`)*
 
 ---
 
@@ -59,3 +59,5 @@
 | 3.3 Styling antarmuka | `feat/frontend-ui` | `fd251a2` | `feat: style responsive lavender and cream interface` | - |
 | 3.4 Logika interaktif | `feat/frontend-ui` | `1bfb6f6` | `feat: wire interactive format, quality, paste, and download flow` | - |
 | 3.5 Pull Request frontend | `feat/frontend-ui` | `08c97ac` | `feat: responsive downloader frontend` | Merged (#2) |
+| 4.1 Validasi Vercel | `chore/release-v1.0.0` | `0cccc7b` | `fix: correct vercel static routing and function limits` | - |
+| 4.2 Dokumentasi rilis | `chore/release-v1.0.0` | `-` | `docs: add deployment guide and v1.0.0 release notes` | - |
