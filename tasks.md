@@ -6,7 +6,7 @@
 
 ## Fase 1: Setup Proyek & Inisialisasi Repository GitHub
 - [x] **1.1** Verifikasi `git` dan `gh` (GitHub CLI) sudah terpasang dan terautentikasi (`gh auth status`). *(Commit: `-`)* — terverifikasi: `git 2.53.0`, `gh 2.46.0`, akun `ramztzy630`.
-- [x] **1.2** Inisialisasi repository lokal (`git init -b main`) dan buat commit awal struktur proyek Vercel (`chore: initial vercel project structure, prd, and tasks`). *(Commit: `-`)*
+- [x] **1.2** Inisialisasi repository lokal (`git init -b main`) dan buat commit awal struktur proyek Vercel (`chore: initial vercel project structure, prd, and tasks`). *(Commit: `f7bd95d`)*
 - [ ] **1.3** Buat repository baru di GitHub dengan nama `XenaDownloader` menggunakan `gh repo create XenaDownloader --public --source=. --remote=origin --push`. *(Commit: `-`)*
 
 ---
@@ -44,4 +44,5 @@
 ## Log Riwayat Commit & Pull Request Agent
 | Fase / Tugas | Branch | Commit Hash | Pesan Commit | Status PR |
 | :--- | :--- | :--- | :--- | :--- |
-| Setup Awal | `main` | *diisi agent* | `chore: initial vercel setup XenaDownloader` | - |
+| 1.1 Verifikasi tooling | `main` | `-` | verifikasi `git` & `gh auth status` | - |
+| 1.2 Inisialisasi repo | `main` | `f7bd95d` | `chore: initial vercel project structure, prd, and tasks` | - |
